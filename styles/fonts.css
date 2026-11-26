@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Verdana, Geneva, Tahoma, sans-serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.css-text-body-1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 172%;
+    letter-spacing: 4%;
+    font-size:16px;
+}
+.css-text-body-2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 150%;
+    letter-spacing: 2%;
+    font-size:14px;
+}
+.css-text-caption{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3%;
+    font-size:13px;
+}
+.css-text-micro{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0%;
+    font-size: 10px;
+}
+.css-text-button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 15;
+    letter-spacing: 4%;
+    font-size: 16px;
+}
+.css-text-body-1-underline{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 172%;
+    letter-spacing: 4%;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.css-text-body-2-underline{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 150%;
+    letter-spacing: 0%;
+    font-size:14px;
+    text-decoration: underline;
+}
+.css-text-body-bold{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 172%;
+    letter-spacing: 4%;
+    font-size:16px;
+}
+.css-text-body-strike{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: line-through;
+    line-height: 150%;
+    letter-spacing: 2%;
+    font-size:14px;
+}
+.css-text-listing-heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20;
+    letter-spacing: 0px;
+    font-size:11px;
+}
+.css-text-listing-description{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 16;
+    letter-spacing: 0px;
+    font-size:6px;
+}
+.css-text-desktop-h0 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 52px;
+}
+.css-text-desktop-h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:40px;
+}
+.css-text-desktop-h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:24px;
+}
+.css-text-desktop-h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+}
+.css-text-mobile-h0 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:40px;
+}
+.css-text-mobile-h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+}
+.css-text-mobile-h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+}
+.css-text-mobile-h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:17px;
+}
+.css-text-mobile-menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+    line-height: 15;
+}
+.css-text-label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 15;
+    letter-spacing: 4%;
+    font-size:96px;
+}
