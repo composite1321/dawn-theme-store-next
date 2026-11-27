@@ -1,26 +1,66 @@
+
 // use prisma-8
 
 model User {
-  id        Int                @id @default(autoincrement())
-  email     String             @unique
-  username  String?
-  name      String?
-  posts     Post[]
-  createdAt DateTime           @default(now()) @onCreate(now())
-  updatedAt temporal.UpdatedAt
+  id            Int                @id @default(autoincrement())
+  nickname      Varchar(255)
+  email         Varchar(255)       @unique
+  password      Varchar(5000)
+  first_name    Varchar(255)
+  last_name     Varchar(255)
+  address_1     Varchar(255)
+  address_2     Varchar(255)?
+  country_code  Varchar(255)
+  state_code    Varchar(255)?
+  city          Varchar(255)
+  zip           Varchar(255)
+  phone         Varchar(255)       @unique
+
+  created_at    TimestampJsDate(6) @default(now())
+  last_modified TimestampJsDate(6) @default(now())
+
+  cards         Card[]
+  carts         Cart[]
 }
 
-model Product { }
+model Card {
+  id              Int          @id @default(autoincrement())
+  payment_token   String       @unique
+  card_exp_month  Int
+  card_exp_year   Int
+  card_owner_name Varchar(255)
 
-model Card {}
+  user_id         Int
+  user            User         @relation(fields: [user_id], references: [id], onDelete: Cascade)
+}
+
+model Product {
+  id          Int     @id @default(autoincrement())
+  img_url     String
+  name        String
+  price       Int
+  in_stock    Int
+  description String?
+}
 
 model Cart {
   id        Int                @id @default(autoincrement())
-  title     String
-  content   String?
-  author    User               @relation(fields: [authorId], references: [id])
-  authorId  Int
-  createdAt DateTime           @default(now()) @onCreate(now())
-  updatedAt temporal.UpdatedAt
+  user_id   Int
+  user      User               @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  items     CartItem[]
+
+  createdAt TimestampJsDate(6) @default(now())
+  updatedAt TimestampJsDate(6) @default(now())
 }
 
+model CartItem {
+  id       Int    @id @default(autoincrement())
+  img_url  String
+  name     String
+  quantity Int
+  price    Int
+
+  cart_id  Int
+  cart     Cart   @relation(fields: [cart_id], references: [id], onDelete: Cascade)
+}

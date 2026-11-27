@@ -22,7 +22,9 @@
     "next": "16.4.6",
     "pg": "^8.23.1",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "temporal-polyfill": "^1.0.8",
+    "tsx": "^4.23.15"
   },
   "devDependencies": {
     "@prisma/cli-engine": "0.10.4",
